@@ -48,7 +48,7 @@ function App() {
                         <MoviesPage />
                     </Route>
 
-                    <Route path="/TV">
+                    <Route path="/television">
                         <TVPage />
                     </Route>
                 </dataContext.Provider>
