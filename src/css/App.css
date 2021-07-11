@@ -1,0 +1,19 @@
+/* .logo {
+    width: 20%;
+    height: auto;
+} */
+
+.navbar-brand-font {
+    font-family: 'Lato', sans-serif;
+    color: #9896f1 !important;
+    font-size: x-large !important;
+}
+
+.bg-dark {
+    background-color: #9896f1 !important;
+}
+
+body {
+    background-color: #1d1d1d !important;
+    color: #ababab !important;
+}
