@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "react-router-dom/Link";
+import logo from "../navbar_logo.png";
 // Import Navbar components
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -7,7 +8,10 @@ import Nav from "react-bootstrap/Nav";
 const Header = () => {
     return (
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-            <Navbar.Brand as={Link} to="/">Streamhop</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="">
+                <img src={logo} alt="logo" />
+                streamhop
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
