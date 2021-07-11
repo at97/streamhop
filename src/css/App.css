@@ -1,6 +1,7 @@
 body {
     background-color: #1d1d1d !important;
     color: #ababab !important;
+    background-image: linear-gradient(to top right, #111111, #1d1d1d) !important;
 }
 
 .bg-dark {
@@ -23,6 +24,16 @@ body {
     border-color: #7877be !important;
 }
 
+.featured-movies-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.featured-text {
+    margin-top: 25px;
+}
+
 .form-check-input {
     background-color: #ababab !important;
     border: 1px solid #ababab !important;
@@ -39,10 +50,8 @@ body {
     color: #ababab !important;
 }
 
-.hero-image-container {
-    background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5));
+.hide {
+    display: none;
 }
 
 .hero-image {
@@ -56,11 +65,29 @@ body {
    
 }
 
+.item-poster {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    transition: transform 450ms, opacity 200ms ease-in;
+    padding: 10px;
+}
+
+.item-poster:hover {
+    transform: scale(1.12);
+    opacity: 0.25;
+}
+
+.item-poster-row {
+    padding: 30px;
+}
+
 /* @media screen and (min-width: 564px) and (max-width: 575px) {
     .ml-max {
         margin-left: 11.4rem !important;
     }
 } */
+
 
 .ml-max {
     margin-left: 9.5rem !important;
@@ -92,7 +119,7 @@ body {
 .navbar-brand-font {
     font-family: 'Lato', sans-serif;
     color: #9896f1 !important;
-    font-size: x-large !important;
+    font-size: 30px !important;
 }
 
 .outline {
@@ -109,4 +136,8 @@ body {
 
 .rm-tp-pd {
     padding-top: 0rem !important;
+}
+
+.test-bg1 {
+    background-color: red;
 }
