@@ -2,8 +2,7 @@ import "../css/App.css";
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import MoviesPage from "../pages/MoviesPage";
-import TVPage from "../pages/TVPage";
+import BrowsePage from "../pages/BrowsePage"
 import dataContext from "../context/dataContext";
 
 function App() {
@@ -44,16 +43,12 @@ function App() {
                         <HomePage />
                     </Route>
 
-                    <Route path="/movies">
-                        <MoviesPage />
-                    </Route>
-
-                    <Route path="/television">
-                        <TVPage />
+                    <Route path="/browse">
+                        <BrowsePage />
                     </Route>
                 </dataContext.Provider>
             </Switch>
-        </Router>
+        </Router >
     );
 }
 
