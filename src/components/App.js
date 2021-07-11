@@ -2,7 +2,9 @@ import "../css/App.css";
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
-import BrowsePage from "../pages/BrowsePage";
+import MoviesPage from "../pages/MoviesPage";
+import TVPage from "../pages/TVPage";
+import dataContext from "../context/dataContext";
 
 function App() {
     const [movies, setMovies] = useState([]);
@@ -37,13 +39,19 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/">
-                    <HomePage />
-                </Route>
+                <dataContext.Provider value={{ movies, setMovies, tvSeries, setTVSeries }}>
+                    <Route exact path="/">
+                        <HomePage />
+                    </Route>
 
-                <Route path="/browse">
-                    <BrowsePage />
-                </Route>
+                    <Route path="/movies">
+                        <MoviesPage />
+                    </Route>
+
+                    <Route path="/TV">
+                        <TVPage />
+                    </Route>
+                </dataContext.Provider>
             </Switch>
         </Router>
     );
