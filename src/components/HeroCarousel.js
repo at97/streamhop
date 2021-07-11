@@ -16,7 +16,7 @@ const HeroCarousel = () => {
             heroImages.push(tvSeries[i]);
         }
     };
-    console.log(heroImages);
+
     return (
         <Carousel>
             {heroImages.map((image) => (
