@@ -1,7 +1,7 @@
 body {
-    background-color: #1d1d1d !important;
+    background-color: #111111 !important;
     color: #ababab !important;
-    background-image: linear-gradient(to top right, #111111, #1d1d1d) !important;
+    /* background-image: linear-gradient(to top right, #111111, #1d1d1d) !important; */
 }
 
 .bg-dark {
@@ -12,6 +12,14 @@ body {
     color: #9896f1 !important;
     text-shadow: none;
     opacity: 1.0;
+}
+
+.content-container {
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto !important;
+    padding: 30px;
 }
 
 .btn-primary {

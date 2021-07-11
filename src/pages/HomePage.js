@@ -3,6 +3,7 @@ import dataContext from "../context/dataContext";
 import FeaturedSection from "../components/FeaturedSection";
 import Header from "../components/Header";
 import HeroCarousel from "../components/HeroCarousel";
+import ContentSection from "../components/ContentSection";
 
 const HomePage = () => {
     const { movies, tvSeries } = useContext(dataContext);
@@ -15,6 +16,7 @@ const HomePage = () => {
             <HeroCarousel />
             <FeaturedSection type={"Films"} data={featuredMovies} />
             <FeaturedSection type={"TV Shows"} data={featuredTVShows} />
+            <ContentSection file={"streamhop-promo.png"} />
         </div>
     )
 }
