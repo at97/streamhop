@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
+import HeroCarousel from "../components/HeroCarousel";
 
 const HomePage = () => {
     return (
         <div className="App">
             <Header />
-            <h1>Hello</h1>
+            <HeroCarousel />
         </div>
     )
 }
