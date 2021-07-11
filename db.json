@@ -13,7 +13,8 @@
             "vote_average": 7.6,
             "vote_count": 7515,
             "rentalCost": 3.99,
-            "purchaseCost": 12.99
+            "purchaseCost": 12.99,
+            "isFeatured": false
         },
         {
             "id": 508943,
@@ -28,7 +29,8 @@
             "vote_average": 8.1,
             "vote_count": 2375,
             "rentalCost": 11.99,
-            "purchaseCost": 25.99
+            "purchaseCost": 25.99,
+            "isFeatured": false
         },
         {
             "id": 728928,
@@ -44,7 +46,8 @@
             "vote_average": 8.1,
             "vote_count": 10,
             "rentalCost": 9.99,
-            "purchaseCost": 16.99
+            "purchaseCost": 16.99,
+            "isFeatured": true
         },
         {
             "id": 791373,
@@ -59,7 +62,8 @@
             "vote_average": 8.4,
             "vote_count": 5979,
             "rentalCost": 12.99,
-            "purchaseCost": 26.99
+            "purchaseCost": 26.99,
+            "isFeatured": false
         },
         {
             "id": 399566,
@@ -75,7 +79,8 @@
             "vote_average": 8,
             "vote_count": 6304,
             "rentalCost": 11.99,
-            "purchaseCost": 25.99
+            "purchaseCost": 25.99,
+            "isFeatured": false
         },
         {
             "id": 615457,
@@ -91,7 +96,8 @@
             "vote_average": 8.4,
             "vote_count": 2510,
             "rentalCost": 14.99,
-            "purchaseCost": 29.99
+            "purchaseCost": 29.99,
+            "isFeatured": true
         },
         {
             "id": 385128,
@@ -108,7 +114,8 @@
             "vote_average": 7.6,
             "vote_count": 475,
             "rentalCost": 14.99,
-            "purchaseCost": 27.99
+            "purchaseCost": 27.99,
+            "isFeatured": false
         },
         {
             "id": 475557,
@@ -124,7 +131,8 @@
             "vote_average": 8.2,
             "vote_count": 18024,
             "rentalCost": 9.99,
-            "purchaseCost": 20.99
+            "purchaseCost": 20.99,
+            "isFeatured": true
         },
         {
             "id": 238,
@@ -140,7 +148,8 @@
             "vote_average": 8.7,
             "vote_count": 14496,
             "rentalCost": 3.99,
-            "purchaseCost": 16.99
+            "purchaseCost": 16.99,
+            "isFeatured": true
         },
         {
             "id": 550,
@@ -156,7 +165,8 @@
             "vote_average": 8.4,
             "vote_count": 21974,
             "rentalCost": 3.99,
-            "purchaseCost": 10.99
+            "purchaseCost": 10.99,
+            "isFeatured": true
         },
         {
             "id": 103,
@@ -173,7 +183,8 @@
             "vote_average": 8.2,
             "vote_count": 8303,
             "rentalCost": 3.99,
-            "purchaseCost": 12.99
+            "purchaseCost": 12.99,
+            "isFeatured": true
         },
         {
             "id": 1359,
@@ -188,7 +199,8 @@
             "vote_average": 7.3,
             "vote_count": 6756,
             "rentalCost": 3.99,
-            "purchaseCost": 9.99
+            "purchaseCost": 9.99,
+            "isFeatured": false
         }
     ],
     "TV": [
@@ -205,7 +217,8 @@
             "vote_average": 8.4,
             "vote_count": 8808,
             "rentalCost": 13.99,
-            "purchaseCost": 30.99
+            "purchaseCost": 30.99,
+            "isFeatured": false
         },
         {
             "id": 84958,
@@ -220,7 +233,8 @@
             "vote_average": 8.2,
             "vote_count": 5495,
             "rentalCost": 10.99,
-            "purchaseCost": 25.99
+            "purchaseCost": 25.99,
+            "isFeatured": false
         },
         {
             "id": 95557,
@@ -235,7 +249,8 @@
             "vote_average": 8.8,
             "vote_count": 2252,
             "rentalCost": 8.99,
-            "purchaseCost": 21.99
+            "purchaseCost": 21.99,
+            "isFeatured": true
         },
         {
             "id": 119243,
@@ -250,7 +265,8 @@
             "vote_average": 7.8,
             "vote_count": 308,
             "rentalCost": 2.99,
-            "purchaseCost": 19.99
+            "purchaseCost": 19.99,
+            "isFeatured": false
         },
         {
             "id": 1396,
@@ -265,7 +281,8 @@
             "vote_average": 8.7,
             "vote_count": 7232,
             "rentalCost": 3.99,
-            "purchaseCost": 39.99
+            "purchaseCost": 39.99,
+            "isFeatured": true
         },
         {
             "id": 2316,
@@ -280,7 +297,8 @@
             "vote_average": 8.5,
             "vote_count": 1742,
             "rentalCost": 3.99,
-            "purchaseCost": 31.99
+            "purchaseCost": 31.99,
+            "isFeatured": false
         },
         {
             "id": 1399,
@@ -295,7 +313,8 @@
             "vote_average": 8.4,
             "vote_count": 14996,
             "rentalCost": 4.99,
-            "purchaseCost": 44.99
+            "purchaseCost": 44.99,
+            "isFeatured": true
         },
         {
             "id": 60059,
@@ -310,7 +329,8 @@
             "vote_average": 8.4,
             "vote_count": 2218,
             "rentalCost": 4.99,
-            "purchaseCost": 40.99
+            "purchaseCost": 40.99,
+            "isFeatured": false
         },
         {
             "id": 1398,
@@ -326,7 +346,8 @@
             "vote_average": 8.5,
             "vote_count": 1428,
             "rentalCost": 3.99,
-            "purchaseCost": 41.99
+            "purchaseCost": 41.99,
+            "isFeatured": true
         },
         {
             "id": 1429,
@@ -341,7 +362,8 @@
             "vote_average": 8.6,
             "vote_count": 3522,
             "rentalCost": 4.99,
-            "purchaseCost": 35.99
+            "purchaseCost": 35.99,
+            "isFeatured": true
         },
         {
             "id": 42009,
@@ -356,7 +378,8 @@
             "vote_average": 8.3,
             "vote_count": 2649,
             "rentalCost": 3.99,
-            "purchaseCost": 29.99
+            "purchaseCost": 29.99,
+            "isFeatured": false
         },
         {
             "id": 1438,
@@ -371,7 +394,8 @@
             "vote_average": 8.4,
             "vote_count": 1327,
             "rentalCost": 3.99,
-            "purchaseCost": 44.99
+            "purchaseCost": 44.99,
+            "isFeatured": true
         }
     ]
 }
