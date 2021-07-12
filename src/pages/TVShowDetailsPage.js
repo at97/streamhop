@@ -4,13 +4,14 @@ import Button from "react-bootstrap/Button";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { JSON_API } from "../constants";
 
 const TVshowDetailsPage = () => {
     const { id } = useParams();
     const [TVshow, setTVshow] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/TV/${id}`)
+        fetch(`${JSON_API}/TV/${id}`)
             .then((res) => {
                 return res.json();
             })
