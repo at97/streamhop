@@ -11,7 +11,7 @@ const DetailsPage = () => {
     const [movie, setMovie] = useState([]);
 
     useEffect(() => {
-        fetch(`https://streamhop.herokuapp.com/api/movies/${id}`)
+        fetch(`${MOVIES_JSON}/${id}`)
             .then((res) => {
                 return res.json();
             })
@@ -33,7 +33,7 @@ const DetailsPage = () => {
             <Header />
             <div style={setBackground} className="bottom-div"></div>
             <div className="top-div">
-                <Card style={{ width: '18rem' }} className="custom-card mt-2 mb-2 ml-5">
+                <Card style={{ width: '25rem' }} className="custom-card mt-2 mb-2 ml-5">
                     <Card.Img variant="top" src={`/images/${movie.poster_path}`} />
                     <Card.Body>
                         <Card.Title>{movie.title}</Card.Title>

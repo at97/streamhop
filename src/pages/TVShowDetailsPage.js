@@ -11,7 +11,7 @@ const TVshowDetailsPage = () => {
     const [TVshow, setTVshow] = useState([]);
 
     useEffect(() => {
-        fetch(`https://streamhop.herokuapp.com/api/TV/${id}`)
+        fetch(`${TV_JSON}/${id}`)
             .then((res) => {
                 return res.json();
             })
@@ -33,7 +33,7 @@ const TVshowDetailsPage = () => {
             <Header />
             <div style={setBackground} className="bottom-div"></div>
             <div className="top-div">
-                <Card style={{ width: '18rem' }} className="custom-card mt-2 mb-2 ml-5">
+                <Card style={{ width: '25rem' }} className="custom-card mt-2 mb-2 ml-5">
                     <Card.Img variant="top" src={`/images/${TVshow.poster_path}`} />
                     <Card.Body>
                         <Card.Title>{TVshow.title}</Card.Title>
