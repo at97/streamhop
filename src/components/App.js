@@ -6,42 +6,57 @@ import HomePage from "../pages/HomePage";
 import BrowsePage from "../pages/BrowsePage"
 import MovieDetailsPage from "../pages/MovieDetailsPage";
 import TVShowDetailsPage from "../pages/TVShowDetailsPage";
-import { MOVIES_JSON, TV_JSON } from "../constants";
 
 function App() {
+    const data = require("../db.json");
     const [movies, setMovies] = useState([]);
-    const [tvSeries, setTVSeries] = useState([]);
+    const [TV, setTV] = useState([]);
+    // useEffect(() => {
+    //     fetch(data)
+    //         .then((res) => {
+    //             return data.movies;
+    //         })
+    //         .then(json => {
+    //             setMovies(json);
+    //         })
+    //         .catch((err) => {
+    //             console.log(`Error: ${err}`);
+    //         })
+    // }, [])
+
+    // useEffect(() => {
+    //     fetch(data)
+    //         .then((res) => {
+    //             return data.TV;
+    //         })
+    //         .then(json => {
+    //             setTVSeries(json);
+    //         })
+    //         .catch((err) => {
+    //             console.log(`Error: ${err}`);
+    //         })
+    // }, [])
 
     useEffect(() => {
-        fetch(`${MOVIES_JSON}`)
-            .then((res) => {
-                return res.json();
-            })
-            .then(json => {
-                setMovies(json);
-            })
-            .catch((err) => {
-                console.log(`Error: ${err}`);
-            })
-    }, [])
+        const fetchMovies = async () => {
+            const movies_data = await fetch("https://streamhop.herokuapp.com/api/movies");
+            const movies_json = await movies_data.json();
+            setMovies(movies_json);
+        }
 
-    useEffect(() => {
-        fetch(`${TV_JSON}`)
-            .then((res) => {
-                return res.json();
-            })
-            .then(json => {
-                setTVSeries(json);
-            })
-            .catch((err) => {
-                console.log(`Error: ${err}`);
-            })
-    }, [])
+        const fetchTVShows = async () => {
+            const tvShows_data = await fetch("https://streamhop.herokuapp.com/api/TV");
+            const tvShows_json = await tvShows_data.json();
+            setTV(tvShows_json);
+        }
+        fetchMovies();
+        fetchTVShows();
+    }, []);
 
     return (
         <Router>
             <Switch>
-                <dataContext.Provider value={{ movies, setMovies, tvSeries, setTVSeries }}>
+                <dataContext.Provider value={{ movies, setMovies, TV, setTV }}>
                     <Route exact path="/">
                         <HomePage />
                     </Route>

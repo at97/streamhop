@@ -11,7 +11,7 @@ const TVshowDetailsPage = () => {
     const [TVshow, setTVshow] = useState([]);
 
     useEffect(() => {
-        fetch(`${TV_JSON}/${id}`)
+        fetch(`https://streamhop.herokuapp.com/api/movies/${id}`)
             .then((res) => {
                 return res.json();
             })
