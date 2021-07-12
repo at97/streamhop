@@ -22,7 +22,7 @@ const DetailsPage = () => {
             })
     }, [])
 
-    let imageUrl = `../images/${movie.backdrop_path}`;
+    let imageUrl = `/images/${movie.backdrop_path}`;
     let setBackground = {
         backgroundImage: 'url(' + imageUrl + ')',
     };

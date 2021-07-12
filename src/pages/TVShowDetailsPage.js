@@ -22,7 +22,7 @@ const TVshowDetailsPage = () => {
             })
     }, [])
 
-    let imageUrl = `../images/${TVshow.backdrop_path}`;
+    let imageUrl = `/images/${TVshow.backdrop_path}`;
     let setBackground = {
         backgroundImage: 'url(' + imageUrl + ')',
     };
