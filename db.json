@@ -264,7 +264,7 @@
             "poster_path": "/s5k4GqTUGXeUdScNrjpYfiQLKHI.jpg",
             "vote_average": 7.8,
             "vote_count": 308,
-            "rentalCost": 2.99,
+            "rentalCost": 3.99,
             "purchaseCost": 19.99,
             "isFeatured": false
         },
@@ -296,7 +296,7 @@
             "poster_path": "/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg",
             "vote_average": 8.5,
             "vote_count": 1742,
-            "rentalCost": 3.99,
+            "rentalCost": 2.99,
             "purchaseCost": 31.99,
             "isFeatured": false
         },
@@ -328,7 +328,7 @@
             "poster_path": "/cU0kAjGjA6d2XjBzJMUIEVKiGDb.jpg",
             "vote_average": 8.4,
             "vote_count": 2218,
-            "rentalCost": 4.99,
+            "rentalCost": 2.99,
             "purchaseCost": 40.99,
             "isFeatured": false
         },
@@ -345,7 +345,7 @@
             "poster_path": "/57okJJUBK0AaijxLh3RjNUaMvFI.jpg",
             "vote_average": 8.5,
             "vote_count": 1428,
-            "rentalCost": 3.99,
+            "rentalCost": 2.99,
             "purchaseCost": 41.99,
             "isFeatured": true
         },
@@ -361,7 +361,7 @@
             "poster_path": "/aiy35Evcofzl7hASZZvsFgltHTX.jpg",
             "vote_average": 8.6,
             "vote_count": 3522,
-            "rentalCost": 4.99,
+            "rentalCost": 2.99,
             "purchaseCost": 35.99,
             "isFeatured": true
         },
@@ -393,7 +393,7 @@
             "poster_path": "/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
             "vote_average": 8.4,
             "vote_count": 1327,
-            "rentalCost": 3.99,
+            "rentalCost": 2.99,
             "purchaseCost": 44.99,
             "isFeatured": true
         }
