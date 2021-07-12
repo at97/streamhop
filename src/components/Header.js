@@ -42,8 +42,7 @@ const Header = () => {
             <Modal
                 show={showSignIn}
                 onHide={handleSignInClose}
-                centered
-                dialogClassName="modal-50w">
+                centered>
                 <Modal.Header className="rm-bt-pd" closeButton>
                     <Modal.Title>Sign In</Modal.Title>
                 </Modal.Header>
