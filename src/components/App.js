@@ -9,7 +9,7 @@ import TVShowDetailsPage from "../pages/TVShowDetailsPage";
 
 function App() {
     const [movies, setMovies] = useState([]);
-    const [TV, setTV] = useState([]);
+    const [tvSeries, setTVSeries] = useState([]);
     useEffect(() => {
         fetch("https://streamhop.herokuapp.com/api/movies")
             .then((res) => {
@@ -36,26 +36,10 @@ function App() {
             })
     }, [])
 
-    // useEffect(() => {
-    //     const fetchMovies = async () => {
-    //         const movies_data = await fetch("https://streamhop.herokuapp.com/api/movies");
-    //         const movies_json = await movies_data.json();
-    //         setMovies(movies_json);
-    //     }
-
-    //     const fetchTVShows = async () => {
-    //         const tvShows_data = await fetch("https://streamhop.herokuapp.com/api/TV");
-    //         const tvShows_json = await tvShows_data.json();
-    //         setTV(tvShows_json);
-    //     }
-    //     fetchMovies();
-    //     fetchTVShows();
-    // }, []);
-
     return (
         <Router>
             <Switch>
-                <dataContext.Provider value={{ movies, setMovies, TV, setTV }}>
+                <dataContext.Provider value={{ movies, setMovies, tvSeries, setTVSeries }}>
                     <Route exact path="/">
                         <HomePage />
                     </Route>
