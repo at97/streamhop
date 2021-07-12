@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className="App">
             <Header />
             <HeroCarousel />
-            <FeaturedSection type={"Films"} data={featuredMovies} />
+            <FeaturedSection type={"Movies"} data={featuredMovies} />
             <FeaturedSection type={"TV Shows"} data={featuredTVShows} />
             <ContentSection file={"streamhop-promo.png"} />
             <Footer />
