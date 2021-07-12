@@ -9,7 +9,6 @@ import { MOVIES_JSON } from "../constants";
 const DetailsPage = () => {
     const { id } = useParams();
     const [movie, setMovie] = useState([]);
-    const data = require("../db.json");
 
     useEffect(() => {
         fetch(`https://streamhop.herokuapp.com/api/TV/${id}`)
