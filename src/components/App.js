@@ -10,47 +10,47 @@ import TVShowDetailsPage from "../pages/TVShowDetailsPage";
 function App() {
     const [movies, setMovies] = useState([]);
     const [TV, setTV] = useState([]);
-    // useEffect(() => {
-    //     fetch(data)
-    //         .then((res) => {
-    //             return data.movies;
-    //         })
-    //         .then(json => {
-    //             setMovies(json);
-    //         })
-    //         .catch((err) => {
-    //             console.log(`Error: ${err}`);
-    //         })
-    // }, [])
-
-    // useEffect(() => {
-    //     fetch(data)
-    //         .then((res) => {
-    //             return data.TV;
-    //         })
-    //         .then(json => {
-    //             setTVSeries(json);
-    //         })
-    //         .catch((err) => {
-    //             console.log(`Error: ${err}`);
-    //         })
-    // }, [])
+    useEffect(() => {
+        fetch("https://streamhop.herokuapp.com/api/movies")
+            .then((res) => {
+                return res.json();
+            })
+            .then(json => {
+                setMovies(json);
+            })
+            .catch((err) => {
+                console.log(`Error: ${err}`);
+            })
+    }, [])
 
     useEffect(() => {
-        const fetchMovies = async () => {
-            const movies_data = await fetch("https://streamhop.herokuapp.com/api/movies");
-            const movies_json = await movies_data.json();
-            setMovies(movies_json);
-        }
+        fetch("https://streamhop.herokuapp.com/api/TV")
+            .then((res) => {
+                return res.json();
+            })
+            .then(json => {
+                setTVSeries(json);
+            })
+            .catch((err) => {
+                console.log(`Error: ${err}`);
+            })
+    }, [])
 
-        const fetchTVShows = async () => {
-            const tvShows_data = await fetch("https://streamhop.herokuapp.com/api/TV");
-            const tvShows_json = await tvShows_data.json();
-            setTV(tvShows_json);
-        }
-        fetchMovies();
-        fetchTVShows();
-    }, []);
+    // useEffect(() => {
+    //     const fetchMovies = async () => {
+    //         const movies_data = await fetch("https://streamhop.herokuapp.com/api/movies");
+    //         const movies_json = await movies_data.json();
+    //         setMovies(movies_json);
+    //     }
+
+    //     const fetchTVShows = async () => {
+    //         const tvShows_data = await fetch("https://streamhop.herokuapp.com/api/TV");
+    //         const tvShows_json = await tvShows_data.json();
+    //         setTV(tvShows_json);
+    //     }
+    //     fetchMovies();
+    //     fetchTVShows();
+    // }, []);
 
     return (
         <Router>
