@@ -1,1 +1,2 @@
-export const JSON_API = 'https://streamhop.herokuapp.com/'
+export const MOVIES_JSON = 'https://streamhop.herokuapp.com/movies'
+export const TV_JSON = 'https://streamhop.herokuapp.com/TV'

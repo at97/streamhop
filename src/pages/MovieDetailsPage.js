@@ -4,14 +4,14 @@ import Button from "react-bootstrap/Button";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { JSON_API } from "../constants";
+import { MOVIES_JSON } from "../constants";
 
 const DetailsPage = () => {
     const { id } = useParams();
     const [movie, setMovie] = useState([]);
 
     useEffect(() => {
-        fetch(`${JSON_API}/movies/${id}`)
+        fetch(`${MOVIES_JSON}/${id}`)
             .then((res) => {
                 return res.json();
             })
