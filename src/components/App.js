@@ -6,13 +6,14 @@ import HomePage from "../pages/HomePage";
 import BrowsePage from "../pages/BrowsePage"
 import MovieDetailsPage from "../pages/MovieDetailsPage";
 import TVShowDetailsPage from "../pages/TVShowDetailsPage";
+import { JSON_API } from "../constants";
 
 function App() {
     const [movies, setMovies] = useState([]);
     const [tvSeries, setTVSeries] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/movies")
+        fetch(`${JSON_API}/movies`)
             .then((res) => {
                 return res.json();
             })
@@ -25,7 +26,7 @@ function App() {
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost:5000/TV")
+        fetch(`${JSON_API}/TV`)
             .then((res) => {
                 return res.json();
             })
