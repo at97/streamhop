@@ -20,7 +20,7 @@ const HeroCarousel = () => {
     return (
         <Carousel>
             {heroImages.map((image) => (
-                <Carousel.Item>
+                <Carousel.Item key={image.id}>
                     <img
                         className=" hero-image d-block hero-banner"
                         src={`/images/${image.backdrop_path}`}
