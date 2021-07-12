@@ -178,6 +178,10 @@ body {
     vertical-align: text-top;
 }
 
+.right-align-text {
+    text-align: right;
+}
+
 .rm-bt-pd {
     padding-bottom: 0rem !important;
 }

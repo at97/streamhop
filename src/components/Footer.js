@@ -14,7 +14,7 @@ const Footer = (props) => {
                     <h1 className="footer-brand-font ">streamhop</h1>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col className="right-align-text">
                         123 Main St. <br />
                         Toronto ON <br />
                         M3A 3H9 <br />
