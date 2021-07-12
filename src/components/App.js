@@ -1,9 +1,11 @@
 import "../css/App.css";
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import dataContext from "../context/dataContext";
 import HomePage from "../pages/HomePage";
 import BrowsePage from "../pages/BrowsePage"
-import dataContext from "../context/dataContext";
+import MovieDetailsPage from "../pages/MovieDetailsPage";
+import TVShowDetailsPage from "../pages/TVShowDetailsPage";
 
 function App() {
     const [movies, setMovies] = useState([]);
@@ -45,6 +47,14 @@ function App() {
 
                     <Route path="/browse">
                         <BrowsePage />
+                    </Route>
+
+                    <Route path="/movie/:id">
+                        <MovieDetailsPage />
+                    </Route>
+
+                    <Route path="/tv/:id">
+                        <TVShowDetailsPage />
                     </Route>
                 </dataContext.Provider>
             </Switch>
