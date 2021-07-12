@@ -34,7 +34,7 @@ const Footer = (props) => {
                     </Col>
                 </Row>
                 <Row className="center">
-                    <p class="text-muted mt-3">&copy; 2021 Ashwin Thottupurath</p>
+                    <p className="text-muted mt-3">&copy; 2021 Ashwin Thottupurath</p>
                 </Row>
             </Container>
         </footer>
