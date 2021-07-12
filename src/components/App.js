@@ -8,7 +8,6 @@ import MovieDetailsPage from "../pages/MovieDetailsPage";
 import TVShowDetailsPage from "../pages/TVShowDetailsPage";
 
 function App() {
-    const data = require("../db.json");
     const [movies, setMovies] = useState([]);
     const [TV, setTV] = useState([]);
     // useEffect(() => {
